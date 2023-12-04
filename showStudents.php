@@ -2,8 +2,8 @@
 
     
 include ("dbcon.php");
-
-$sql = "select * from student" ; 
+$lectid = $_GET['lecturerid'] ;
+$sql = "select * from student where lecturerid = $lectid" ; 
 $result = mysqli_query($conn, $sql) ;
 echo "<table border='1'>" ;
 while ($row=mysqli_fetch_assoc($result)) {
