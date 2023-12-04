@@ -5,5 +5,6 @@ firstname VARCHAR (30),
 surname VARCHAR (30), 
 email VARCHAR (30),
 phone VARCHAR (30),
-salary DECIMAL (10,2),lecturer
-);college
+salary DECIMAL (10,2),
+courseid VARCHAR (30),
+);

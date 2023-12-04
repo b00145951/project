@@ -5,11 +5,11 @@ $sn = $_POST ['surname'] ;
 $email = $_POST ['email'] ;
 $phone = $_POST ['phone'] ;
 $salary = $_POST ['salary'] ;
-$staffid = $_POST ['staffid'] ;
+$courseid = $_POST ['courseid'] ;
     
 include ("dbcon.php");
 
-$sql = "insert into lecturer(lecturerid, firstname, surname, email, phone, salary, staffid) VALUES ('$id', '$fn', '$sn', '$email', '$phone' , '$salary', 'staffid' ) " ; 
+$sql = "insert into lecturer(lecturerid, firstname, surname, email, phone, salary, courseid) VALUES ('$id', '$fn', '$sn', '$email', '$phone' , '$salary', 'courseid' ) " ; 
 
 // echo $sql; 
 mysqli_query($conn, $sql) ;
