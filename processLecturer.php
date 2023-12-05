@@ -10,7 +10,7 @@ $coursename = $_POST ['coursename'] ;
     
 include ("dbcon.php");
 
-$sql = "insert into lecturer(lecturerid, firstname, surname, email, phone, salary, courseid, coursename) VALUES ('$id', '$fn', '$sn', '$email', '$phone' , '$salary', '$courseid', '$coursename'' ) " ; 
+$sql = "insert into lecturer(lecturerid, firstname, surname, email, phone, salary, courseid, coursename) VALUES ('$id', '$fn', '$sn', '$email', '$phone' , '$salary', '$courseid', '$coursename') " ; 
 
 // echo $sql; 
 mysqli_query($conn, $sql) ;

@@ -1,0 +1,1 @@
+INSERT INTO lecturer(lecturerid, firstname, surname, email, phone, salary, courseid, coursename) VALUES ('Ll422', 'seffe', 'dsfefs', 'efsf562@gmail.com', '0856707839', '100000', '2', 'Arts' )
