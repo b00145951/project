@@ -7,16 +7,16 @@ if (isset($_POST['id']))
     $id = $_POST['id'];
 
     // Get student data based on studentid
-    $sqlStudent = "SELECT s.firstName, s.surName
-                   FROM student s
-                   WHERE s.studentid = '$id'";
+    $sqlStudent = "SELECT student.firstName, student.surName
+                   FROM student
+                   WHERE student.studentid = '$id'";
     $resultStudent = $conn->query($sqlStudent);
 
     // Get lecturer data based on lecturerid and course
-    $sqlLecturer = "SELECT l.firstname, l.surname
-                    FROM lecturer l
-                    JOIN student s ON l.courseid = s.courseid
-                    WHERE l.lecturerid = '$id'";
+    $sqlLecturer = "SELECT lecturer.firstname, lecturer.surname
+                    FROM lecturer
+                    JOIN student ON lecturer.courseid = student.courseid
+                    WHERE lecturer.lecturerid = '$id'";
     $resultLecturer = $conn->query($sqlLecturer);
     // output results
     echo "<h2>Results for ID: $id</h2>";
@@ -38,7 +38,7 @@ if (isset($_POST['id']))
     } 
      //failed result
      else {
-        echo "No results found for ID: $id.";
+        echo "No results found for entered id: $id.";
     }
 }
 
