@@ -1,1 +1,1 @@
-INSERT INTO student(studentid, firstName, surName, email, dob, phone) VALUES ('b00456362', 'sophie', 'daly', 'b00456362@gmail.com', '2001-09-22' , '0852637839' )
+INSERT INTO student(studentid, firstName, surName, email, dob, phone, courseid, coursename) VALUES ('b0854962', 'spe', 'd', 'b00562@gmail.com', '2009-05-22' , '0856707839', '2', 'Arts' )
