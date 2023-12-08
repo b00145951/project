@@ -7,6 +7,7 @@ $sql = "select * from lecturer" ;
 $result = mysqli_query($conn, $sql) ;
 echo "<table border='1'>" ;
 echo "<tr><th>LecturerID</th><th>First Name</th><th>Surname</th><th>Email</th><th>Phone</th><th>Salary</th><th>CourseID</th><th>CourseName</th></tr>";
+
 while ($row=mysqli_fetch_assoc($result)) {
     $id = $row ['lecturerid'] ;
     $fn = $row['firstname'] ;
